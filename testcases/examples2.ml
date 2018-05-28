@@ -14,9 +14,6 @@ mgu term term4;;
 mgu term3 term5;;
 (* Exception: NOT_UNIFIABLE. *)
 
-
-On 3 April 2018 at 15:13, shreshth tuli <shreshthtuli@gmail.com> wrote:
-
     let term = Node(Sym "+", [V "x"; Node(("1",0), [])]);; (* x + 1 *)
     let term2 = Node(Sym "+", [V (Var "x"); Node(Sym "+", [Node(Sym "1", [])])]);; (* invalid *)
     let term3 = Node(Sym "+", [Node(Sym "+", [V (Var "x"); V (Var "y")]); Node(Sym "-", [V (Var "x"); V (Var "y")])]);;
